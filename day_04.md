@@ -18,4 +18,4 @@ outlier(離群值,例外值)
 #### 處理方式
 * 刪除欄位
 * 新增欄位紀錄異常
-* 換值(中位數,min,max,平均數...)
+* 填補(中位數(midian),min,max,平均數(mean),眾數(mode),分位數(quantiles)...)
