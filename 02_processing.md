@@ -30,4 +30,6 @@ nominal variables : 沒明確排序的變量 (適合3，但很多不同值時 ex
 將資料拆成k份做交叉驗證，  
 選1份當驗證集，剩下k-1份當訓練集，算出一個Validation Error，  
 反覆做k次後，把k個Validation Error的值做平均，  
-用此值來當模型好壞的指標。
+用此值來當模型好壞的指標。  
+
+[scikit-learn](https://scikit-learn.org/stable/index.html)
