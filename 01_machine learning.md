@@ -16,4 +16,4 @@
 
 ### EDA探索式資料分析(Exploratory Data Analysis)
 透過***視覺化/統計工具***來了解資料,發現outliers或異常數值,分析變數間關聯性  
-matplotlib,seaborn
+[matplotlib](https://matplotlib.org/3.2.2/gallery/index.html),[seaborn](https://seaborn.pydata.org/examples/index.html)
