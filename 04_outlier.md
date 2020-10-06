@@ -22,7 +22,7 @@ outlier(離群值,例外值)
   ```  
 * 用統計值檢查  
   Z-score (Standard score): <img src="http://chart.googleapis.com/chart?cht=tx&chl= $ Z = \frac{\chi-\mu}{\sigma} $" style="border:none;">  
-  \mu是mean,\sigma是標準差，Z值正負表示高或低於標準差，值代表差幾個表準差，通常超過三個就會當成outlier。  
+  \mu是mean,\sigma是標準差，Z值正負表示高或低於標準差，值代表差幾個標準差，通常超過三個就會當成outlier。  
   ```
   from scipy import stats
   import numpy as np
