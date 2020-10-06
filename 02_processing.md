@@ -12,6 +12,13 @@ drop_X_valid = X_valid.select_dtypes(exclude=['object'])
 ```  
 2. Label Encoding  把不同值對應不同數字  
 ```
+# Using Pandas
+import pandas as pd
+df = pd.DataFrame({'size':['XXL', 'XL', 'L', 'M', 'S']})
+cat = pd.Categorical(df['size'], categories=df['size'].unique(), ordered=True))
+df['size_code'] = cat.codes
+
+# Using sklearn
 from sklearn.preprocessing import LabelEncoder
 label_encoder = LabelEncoder()
 for col in object_cols:
@@ -20,6 +27,11 @@ for col in object_cols:
 ```
 3. One-Hot Encoding 替各值增加一行，記錄每筆資料有無此變量  
 ```
+#using pandas
+df = pd.DataFrame({'A': ['a', 'b', 'a'], 'B': ['b', 'a', 'c'])
+pd.get_dummies(df)
+
+#using sklearn
 from sklearn.preprocessing import OneHotEncoder
 OH_encoder = OneHotEncoder(handle_unknown='ignore', sparse=False)
 ```
