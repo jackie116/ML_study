@@ -14,8 +14,26 @@ outlier(離群值,例外值)
 * 記錄錯誤  
 #### 檢查方式
 * 確認欄位意義
-* 畫圖或用統計值檢查  
-  box plot, scatter plot
+* 畫圖  
+  box plot, scatter plot  
+  ```
+  import seaborn as sns
+  sns.boxplot(x=boston_df['DIS'])
+  ```  
+* 用統計值檢查  
+  Z-score (Standard score)  
+  $$ Z = \(\chi-\mu\)\div\sigma $$
+  ```
+  from scipy import stats
+  import numpy as np
+  z = np.abs(stats.zscore(boston_df))
+  ```  
+  IQR score  
+  ```
+  Q1 = boston_df_o1.quantile(0.25)
+  Q3 = boston_df_o1.quantile(0.75)
+  IQR = Q3 - Q1
+  ```  
 #### 處理方式
 * 刪除欄位
 * 新增欄位紀錄異常
