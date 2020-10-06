@@ -27,7 +27,7 @@ outlier(離群值,例外值)
   import numpy as np
   z = np.abs(stats.zscore(boston_df))
   ```  
-  IQR score (interquartile range): <img src="http://chart.googleapis.com/chart?cht=tx&chl= $ QD = \frac{Q3-Q1}{2} $" style="border:none;">
+  IQR score (interquartile range): <img src="http://chart.googleapis.com/chart?cht=tx&chl= $ IQR = Q3-Q1 $" style="border:none;">
   ```
   Q1 = boston_df_o1.quantile(0.25)
   Q3 = boston_df_o1.quantile(0.75)
