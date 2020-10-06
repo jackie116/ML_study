@@ -22,7 +22,7 @@ outlier(離群值,例外值)
   ```  
 * 用統計值檢查  
   Z-score (Standard score)  
-  $$ Z = \(\chi-\mu\)\div\sigma $$
+ $$ Z = \frac{\chi-\mu}{\sigma} $$
   ```
   from scipy import stats
   import numpy as np
